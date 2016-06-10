@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../../bower_components/zTree_v3/css/zTreeStyle/zTreeStyle.css"/>
+    <link rel="stylesheet" href="styles/bookmark.css"/>
+</head>
+<body>
+<!--<div class="page-header">
+    <h1><i class="glyphicon glyphicon-bookmark"></i> Bookmark manager</h1>
+    <input type="text" class="pull-right" name="search" placeholder="Search bookmarks" />
+    <p>Simple website bookmarks.</p>
+</div>-->
+<div class="viewFramework-topbar">
+    <h3><small><i class="glyphicon glyphicon-bookmark hide"></i> </small>Bookmark manager <small>Simple website bookmarks</small></h3>
+    <input type="text" class="pull-right" name="search" placeholder="Search bookmarks" />
+</div>
+<div class="viewFramework-body viewFramework-sidebar-full">
+    <div class="viewFramework-sidebar">
+        <div class="sidebar">
+            <div class="toolbar">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Folders... <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="add-folder" href="#">Add folder...</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a class="rename-folder" href="#">Rename...</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Cut</a></li>
+                        <li><a href="#">Copy</a></li>
+                        <li><a href="#">Paste</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a class="remove-folder" href="#">Delete</a></li>
+                        <li><a href="#">Undo Delete</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="folders ztree" id="sidebar-folders">
+
+            </div>
+        </div>
+    </div>
+    <div class="viewFramework-product">
+        <div class="toolbar">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Organize <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="add-page" href="javascript:void(0);" data-toggle="modal" data-target="#addPageModal">Add page...</a></li>
+                    <li><a class="add-folder" href="#">Add folder...</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a class="rename-item" href="#">Rename...</a></li>
+                    <li><a class="edit-item" href="#">Edit...</a></li>
+                    <li><a class="show-in-folder" href="#">Show in Folder</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Cut</a></li>
+                    <li><a href="#">Copy</a></li>
+                    <li><a href="#">Paste</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a class="remove-item" href="#">Delete</a></li>
+                    <li><a href="#">Undo Delete</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Reorder by title</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Import bookmarks from HTML file...</a></li>
+                    <li><a href="#">Export bookmarks to HTML file...</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="product-content" class="product-content">
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="addPageModal" tabindex="-1" role="dialog" aria-labelledby="addPageModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="addPageModalLabel">Add Page</h4>
+            </div>
+            <div class="modal-body">
+                <form id="page-edit-form" name="page-edit-form">
+                    <input type="hidden" name="id" id="page-id"/>
+                    <div class="form-group">
+                        <label for="page-name" class="control-label">Page Name:</label>
+                        <input type="text" class="form-control" id="page-name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="page-url" class="control-label">URL:</label>
+                        <input type="text" class="form-control" id="page-url" name="url">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" id="page-form-save" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>window.$ = window.jQuery = require("../../bower_components/jquery/dist/jquery.min");</script>
+<!--<script type="text/javascript" src="../../bower_components/jquery/dist/jquery.js"></script>-->
+<script type="text/javascript" src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="../../bower_components/zTree_v3/js/jquery.ztree.all.js"></script>
+<script type="text/javascript" src="scripts/bookmark.js"></script>
+</body>
+</html>

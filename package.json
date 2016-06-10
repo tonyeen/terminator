@@ -1,0 +1,29 @@
+{
+  "name": "terminator",
+  "version": "1.0.0",
+  "description": "A stupid programmer's terminal toolkit.",
+  "main": "app/main/main.js",
+  "scripts": {
+    "start": "electron app/main/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonyeen/terminator.git"
+  },
+  "keywords": [
+    "Electron",
+    "programmer",
+    "terminal",
+    "toolkit"
+  ],
+  "author": "Tony",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonyeen/terminator/issues"
+  },
+  "homepage": "https://github.com/tonyeen/terminator#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.2"
+  }
+}

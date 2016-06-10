@@ -1,0 +1,27 @@
+{
+  "name": "terminator",
+  "description": "A stupid programmer's terminal toolkit.",
+  "main": "app/main/main.js",
+  "authors": [
+    "Tony"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Electron",
+    "programmer",
+    "terminal",
+    "toolkit"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "zTree_v3": "https://github.com/zTree/zTree_v3.git#^3.5.24"
+  }
+}
