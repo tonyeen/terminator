@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bookmark">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookmarks manager</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../../bower_components/angular-material/angular-material.css"/>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css assets/styles/bookmark.css -->
+    <link rel="stylesheet" href="assets/styles/bookmark.css"/>
+    <!-- endbuild -->
+</head>
+<body>
+<ng-view></ng-view>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="../../bower_components/angular/angular.js"></script>
+<script src="../../bower_components/angular-route/angular-route.js"></script>
+<script src="../../bower_components/angular-animate/angular-animate.js"></script>
+<script src="../../bower_components/angular-aria/angular-aria.js"></script>
+<script src="../../bower_components/angular-material/angular-material.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/bookmark.js -->
+<script src="./scripts/bookmark.js"></script>
+<script src="./scripts/services/folderService.js"></script>
+<script src="./scripts/services/pageService.js"></script>
+<script src="./scripts/controllers/folderController.js"></script>
+<script src="./scripts/controllers/pageController.js"></script>
+<!-- endbuild -->
+</body>
+</html>

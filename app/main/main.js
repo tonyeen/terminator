@@ -17,7 +17,8 @@ function createWindow() {
 
     // and load the index.html of the app.
     //mainWindow.loadURL(`file://${__dirname}/index.html`);
-    mainWindow.loadURL('file://'+__dirname+'/../../renderers/main/index.html');
+    //mainWindow.loadURL('file://'+__dirname+'/../../renderers/main/index.html');
+    mainWindow.loadURL('file://' + __dirname + '/index.html');
 
     // Open the DevTools.
     //mainWindow.webContents.openDevTools();
@@ -43,7 +44,7 @@ app.on('window-all-closed', function () {
     if (process.platform !== 'darwin') {
         app.quit();
     }
-})
+});
 
 app.on('activate', function () {
     // On OS X it's common to re-create a window in the app when the
@@ -51,4 +52,4 @@ app.on('activate', function () {
     if (mainWindow === null) {
         createWindow();
     }
-})
+});
